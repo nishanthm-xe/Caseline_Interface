@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   CASE LINE Avatar State Animations (IDLE, LISTENING, PROCESSING, SPEAKING)
+   Ensuring constant character identity with real-time state transitions
+   ========================================================================== */
+
+/* 1. IDLE: Calm, gentle breathing motion */
+@keyframes caseline-breathe {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.012);
+  }
+}
+
+/* 2. LISTENING: Expanding acoustic concentric waves & glowing aura */
+@keyframes caseline-listen-ripple {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.85;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.42);
+    opacity: 0;
+  }
+}
+
+@keyframes caseline-listen-glow {
+  0%, 100% {
+    box-shadow: 0 0 16px 2px rgba(14, 165, 233, 0.4), 0 0 0 4px rgba(56, 189, 248, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 32px 6px rgba(14, 165, 233, 0.7), 0 0 0 6px rgba(56, 189, 248, 0.85);
+  }
+}
+
+/* 3. PROCESSING: Orbital clinical reasoning ring & cognitive pulse */
+@keyframes caseline-orbital-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes caseline-processing-pulse {
+  0%, 100% {
+    box-shadow: 0 0 16px 2px rgba(99, 102, 241, 0.4), 0 0 0 4px rgba(129, 140, 248, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 32px 6px rgba(99, 102, 241, 0.7), 0 0 0 6px rgba(165, 180, 252, 0.85);
+  }
+}
+
+@keyframes caseline-shimmer-sweep {
+  0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+}
+
+/* 4. SPEAKING: Speech cadence modulation & radiating vocal waves */
+@keyframes caseline-speaking-cadence {
+  0%, 100% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.024);
+  }
+  45% {
+    transform: scale(1.008);
+  }
+  70% {
+    transform: scale(1.026);
+  }
+  85% {
+    transform: scale(1.012);
+  }
+}
+
+@keyframes caseline-speak-wave {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(1.36);
+    opacity: 0;
+  }
+}
+
+@keyframes caseline-speak-glow {
+  0%, 100% {
+    box-shadow: 0 0 16px 2px rgba(20, 184, 166, 0.4), 0 0 0 4px rgba(45, 212, 191, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 32px 6px rgba(20, 184, 166, 0.7), 0 0 0 6px rgba(45, 212, 191, 0.85);
+  }
+}
+
+/* Audio Equalizer bars for live vocalization/transcription */
+@keyframes caseline-eq-1 {
+  0%, 100% { height: 25%; }
+  50% { height: 95%; }
+}
+@keyframes caseline-eq-2 {
+  0%, 100% { height: 75%; }
+  50% { height: 20%; }
+}
+@keyframes caseline-eq-3 {
+  0%, 100% { height: 40%; }
+  50% { height: 100%; }
+}
+@keyframes caseline-eq-4 {
+  0%, 100% { height: 90%; }
+  50% { height: 35%; }
+}
+@keyframes caseline-eq-5 {
+  0%, 100% { height: 30%; }
+  50% { height: 85%; }
+}
+
+.animate-caseline-breathe {
+  animation: caseline-breathe 4s ease-in-out infinite;
+}
+
+.animate-caseline-listen-glow {
+  animation: caseline-listen-glow 2s ease-in-out infinite;
+}
+
+.animate-caseline-processing-pulse {
+  animation: caseline-processing-pulse 2.2s ease-in-out infinite;
+}
+
+.animate-caseline-speak-cadence {
+  animation: caseline-speaking-cadence 1.5s ease-in-out infinite;
+}
+
+.animate-caseline-speak-glow {
+  animation: caseline-speak-glow 1.8s ease-in-out infinite;
+}
+
+.animate-caseline-orbital {
+  animation: caseline-orbital-spin 3s linear infinite;
+}
+
+.animate-caseline-shimmer {
+  animation: caseline-shimmer-sweep 2.4s ease-in-out infinite;
+}
+
