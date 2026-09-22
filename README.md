@@ -1,3 +1,4 @@
+# CASE LINE
 
 CASE LINE is an AI-powered multilingual patient history platform that uses voice, touch, adaptive questioning, and body-location mapping to capture structured medical history.
 
