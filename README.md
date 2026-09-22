@@ -1,2 +1,20 @@
-# Caseline
-CASE LINE is an AI-powered multilingual patient history platform that uses voice, touch, adaptive questioning, and body-location mapping to capture structured medical history. It supports red-flag triage, vitals, OCR of medical documents, patient verification, and provides doctors with a concise clinical summary for faster consultation.
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/a489039e-3afc-4242-84cb-012b2a9c29c4
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

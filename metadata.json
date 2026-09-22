@@ -1,0 +1,11 @@
+{
+  "name": "Remix Remix Remix Remix Remix CaseLine",
+  "description": "AI-powered clinical history software platform with voice conversation, adaptive questioning, document OCR, red-flag triage, AYUSH mode, and physician review.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
