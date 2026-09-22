@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# CASE LINE
 
-# Run and deploy your AI Studio app
+AI-powered multilingual patient history-taking and clinical support platform.
 
-This contains everything you need to run your app locally.
+## Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/a489039e-3afc-4242-84cb-012b2a9c29c4
+https://caseline-b6ii.onrender.com
+
+## GitHub
+
+https://github.com/nishanthm-xe/Caseline
+
+## Features
+
+- Multilingual patient interaction
+- Voice-based clinical history taking
+- Gemini-powered speech transcription
+- Adaptive clinical questioning
+- Red-flag detection
+- Body pain location selection
+- Medical document upload
+- OCR-based information extraction
+- Patient clinical summary
+- Doctor dashboard
+- Patient review and verification
+
+## Tech Stack
+
+- React
+- TypeScript
+- Node.js
+- Express
+- Vite
+- Google Gemini API
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install --legacy-peer-deps
+npm run build
+npm run dev
